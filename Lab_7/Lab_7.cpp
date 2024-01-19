@@ -66,8 +66,13 @@ void task_25_str();
 
 
 int main(int argc, char* argv) {
+
 	setlocale(LC_ALL, "rus");
+
+	
+
 	srand(time(NULL));
+
 	int your_choice = 0;
 
 	while (1) {
@@ -89,12 +94,9 @@ int main(int argc, char* argv) {
 		case 5: printf("\n\t\t\t\tВыйти из программы\n"); return 0;
 		default: printf("\n\t\t\t\tОшибка. Неверное значение...\n"); break;
 		}
+		_getch();
 		clear_console();
 	}
-	/*task_10();
-	task_25();
-	task_10_str();
-	task_25_str();*/
 
 	_getch();
 	return 0;

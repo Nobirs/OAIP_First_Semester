@@ -15,16 +15,24 @@ void task_55();
 int main() {
 	setlocale(LC_ALL, "rus");
 
+	int arr[10];
+	printf("%d", sizeof(arr) / sizeof(arr[0]));
+
 	while (1) {
-		//task_10();
-		//task_25();
-		//task_40();
+		task_10();
+		task_25();
+		task_40();
 		task_55();
 		printf("\n\n");
 		_getch();
 	}
 
 
+	return 0;
+}
+
+int getSize(int arr[]) {
+	int size = sizeof(arr);
 	return 0;
 }
 
@@ -40,6 +48,7 @@ void task_10() {
 		printf("\nВведите число элементов массива: ");
 		scanf_s("%d", &N);
 	} while (N == 0);
+
 	// Declare massive and check if malloc successful
 	float* massive = (float*)malloc(N * sizeof(float));
 	if (!massive) {

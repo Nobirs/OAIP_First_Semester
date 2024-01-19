@@ -15,6 +15,18 @@ list_t* create_list() {
 	return list;
 }
 
+list_t* clear_list(list_t* list)
+{
+	for (int i = 0; i < list->size; i++) {
+		list_elem_t* elem = _pop_first(list);
+		free(elem);
+	}
+	list->size = 0;
+	list->first = nullptr;
+	list->last = nullptr;
+	return list;
+}
+
 list_elem_t* create_list_elem(void* obj)
 {
 	list_elem_t* elem = (list_elem_t*)malloc(sizeof(list_elem_t));

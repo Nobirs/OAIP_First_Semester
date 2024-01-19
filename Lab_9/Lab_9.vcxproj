@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{9a0a6d62-befe-4381-8c19-ca89ddc5333a}</ProjectGuid>
-    <RootNamespace>Lab8</RootNamespace>
+    <ProjectGuid>{36212336-b25c-4990-989f-287505316952}</ProjectGuid>
+    <RootNamespace>Lab9</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -108,6 +108,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\User\source\repos\Lab_1\Lab_9;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -127,28 +128,28 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="BabyToy.cpp" />
-    <ClCompile Include="Console_BabyToy.cpp" />
     <ClCompile Include="Console_Information.cpp" />
     <ClCompile Include="Console_Overall.cpp" />
-    <ClCompile Include="Console_Table.cpp" />
     <ClCompile Include="File_Information.cpp" />
     <ClCompile Include="information.cpp" />
-    <ClCompile Include="Lab_8.cpp" />
-    <ClCompile Include="Lab_9_files.cpp" />
+    <ClCompile Include="Lab_9.cpp" />
     <ClCompile Include="list.cpp" />
-    <ClCompile Include="table.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="BabyToy.h" />
-    <ClInclude Include="Console_BabyToy.h" />
     <ClInclude Include="Console_Information.h" />
     <ClInclude Include="Console_Overall.h" />
-    <ClInclude Include="Console_Table.h" />
     <ClInclude Include="File_Information.h" />
     <ClInclude Include="information.h" />
     <ClInclude Include="list.h" />
-    <ClInclude Include="table.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="information.bin" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="f1.txt" />
+    <Text Include="f2.txt" />
+    <Text Include="file_from.txt" />
+    <Text Include="file_to.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,48 +1,98 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Исходные файлы">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    <Filter Include="Information">
+      <UniqueIdentifier>{d6839f8f-5d92-4af8-ba4b-9adac68d3ae3}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Файлы заголовков">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    <Filter Include="Information\Headers">
+      <UniqueIdentifier>{ef0e4253-4d21-4704-b39b-04ff8c0cdde4}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Файлы ресурсов">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    <Filter Include="Information\Sources">
+      <UniqueIdentifier>{561275f9-f7cd-471e-86ba-68a27733b8fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BabyToy">
+      <UniqueIdentifier>{b8dc103b-f54f-49be-a4b2-5bb33166c813}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BabyToy\Headers">
+      <UniqueIdentifier>{99203d40-51c7-4ec3-8b8e-d4a89c6363e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BabyToy\Sources">
+      <UniqueIdentifier>{1ea8ce2c-1ab0-41a4-85bd-447a38941dfa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Table">
+      <UniqueIdentifier>{320c9643-9c60-47cf-bb32-65f9b1c38255}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Table\Headers">
+      <UniqueIdentifier>{82f750f9-6a64-41ae-bd21-c6c745ee60a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Table\Sources">
+      <UniqueIdentifier>{2a975040-d32f-4ad0-bf40-d2268d58baea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="List">
+      <UniqueIdentifier>{038ba449-d553-495d-b05b-890d9d278802}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Console_Overall">
+      <UniqueIdentifier>{11e5a20d-5f52-4f31-954c-de2afe934943}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Lab_8.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="baby_tool.cpp">
-      <Filter>Файлы ресурсов</Filter>
+    <ClCompile Include="Console_Information.cpp">
+      <Filter>Information\Sources</Filter>
     </ClCompile>
     <ClCompile Include="information.cpp">
-      <Filter>Файлы ресурсов</Filter>
+      <Filter>Information\Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="BabyToy.cpp">
+      <Filter>BabyToy\Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Console_BabyToy.cpp">
+      <Filter>BabyToy\Sources</Filter>
     </ClCompile>
     <ClCompile Include="table.cpp">
-      <Filter>Файлы ресурсов</Filter>
+      <Filter>Table\Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Console_Table.cpp">
+      <Filter>Table\Sources</Filter>
     </ClCompile>
     <ClCompile Include="list.cpp">
-      <Filter>Файлы ресурсов</Filter>
+      <Filter>List</Filter>
+    </ClCompile>
+    <ClCompile Include="Console_Overall.cpp">
+      <Filter>Console_Overall</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab_8.cpp" />
+    <ClCompile Include="Lab_9_files.cpp" />
+    <ClCompile Include="File_Information.cpp">
+      <Filter>Information\Sources</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="information.h">
-      <Filter>Файлы заголовков</Filter>
+    <ClInclude Include="Console_Information.h">
+      <Filter>Information\Headers</Filter>
     </ClInclude>
-    <ClInclude Include="baby_tool.h">
-      <Filter>Файлы заголовков</Filter>
+    <ClInclude Include="information.h">
+      <Filter>Information\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Console_BabyToy.h">
+      <Filter>BabyToy\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="BabyToy.h">
+      <Filter>BabyToy\Headers</Filter>
     </ClInclude>
     <ClInclude Include="table.h">
-      <Filter>Файлы заголовков</Filter>
+      <Filter>Table\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Console_Table.h">
+      <Filter>Table\Headers</Filter>
     </ClInclude>
     <ClInclude Include="list.h">
-      <Filter>Файлы заголовков</Filter>
+      <Filter>List</Filter>
+    </ClInclude>
+    <ClInclude Include="Console_Overall.h">
+      <Filter>Console_Overall</Filter>
+    </ClInclude>
+    <ClInclude Include="File_Information.h">
+      <Filter>Information\Headers</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

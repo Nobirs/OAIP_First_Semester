@@ -14,6 +14,7 @@ typedef struct {
 
 
 list_t* create_list();
+list_t* clear_list(list_t*);
 list_elem_t* create_list_elem(void* obj);
 void swap_elems(list_elem_t*, list_elem_t*);
 void add_first(list_t* list, list_elem_t* obj);
